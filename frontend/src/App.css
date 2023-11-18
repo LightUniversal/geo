@@ -1,0 +1,24 @@
+
+/* Costome styling */
+.header {
+  border: thin solid rgba(0,0,0,0.1);
+}
+
+li {
+  font-weight: bold;
+}
+input[type="search"] {
+  border: 1px solid rgba(0,0,0,0.0);
+  background-color: rgba(141, 143, 143, 0.1);
+  width: 300px;
+  
+}
+
+div.item:last-child {
+  border: none;
+}
+
+.body {
+  margin: 30px 100px;
+  background-color: rgba(220, 220, 220, 0.3);
+}
