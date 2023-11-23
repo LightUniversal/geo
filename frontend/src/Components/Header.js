@@ -51,7 +51,7 @@ const Header = () => {
           <div>
             <img
               className="w-16 cursor-pointer"
-              src="https://cdn-icons-png.flaticon.com/512/5968/5968204.png"
+              src='/image/logo.jpeg'
               alt="..."
             />
           </div>

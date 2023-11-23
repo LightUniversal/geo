@@ -52,7 +52,7 @@ app.use(notFound);
 app.use(errorHandler);
 
 // Listen to port
-const port = process.env.PORT || 5000;
+const port = process.env.PORT || 5500;
 app.listen(port, () => {
   console.log("Port started on " + port);
 });
