@@ -17,8 +17,8 @@ const ProductsScreen = () => {
     console.log("data")
   }
   return (
-    <div className=" bg-slate-50 p-4 ">
-      <h2 className="w-3/4 mx-auto font-bold text-2xl my-5 flex items-center text-slate-600">
+    <div className="  border-t border-slate-50 ">
+      <h2 className=" mx-auto bg-slate-800 font-bold text-2xl p-4 my-5 flex items-center text-slate-100">
         Recent Products <FaShoppingCart />
       </h2>
       {isLoading ? (
@@ -26,11 +26,11 @@ const ProductsScreen = () => {
       ) : error ? (
         <div>{error?.data?.message}</div>
       ) : (
-        <div className="flex justify-between flex-wrap items-center gap-3 w-5/6  mx-auto ">
+        <div className="flex justify-between  w-full flex-wrap items-center gap-3 md:w-5/6 px-3 ">
           {data.products.map((product) => (
               <Link key={product._id}
               to={`/product/${product._id}`}
-              className="one shadow-xl rounded-xl px-2 py-3 md:w-1/4 my-3 w-full"
+              className="one shadow-xl bg-white rounded-xl border-t px-2 py-3 md:w-1/4 my-3 w-full"
             >
               <div className="image flex justify-center">
                 <img src={product.image} className=" w-44" alt="" />

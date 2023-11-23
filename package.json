@@ -4,6 +4,9 @@
     "description": "Ecommerce application built with mern stack",
     "type": "module",
     "main": "app.js",
+    "engines": {
+        "node": ">=20.9.0 <21.0.0"
+      },
     "scripts": {
       "start": "node backend/app.js",
       "server": "nodemon backend/app.js",
