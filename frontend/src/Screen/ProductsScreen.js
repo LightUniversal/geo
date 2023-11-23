@@ -30,7 +30,7 @@ const ProductsScreen = () => {
           {data.products.map((product) => (
               <Link key={product._id}
               to={`/product/${product._id}`}
-              className="one shadow-xl bg-white rounded-xl border-t mx-auto px-2 py-3 md:w-1/4 my-3 w-4/5"
+              className="one shadow-xl bg-white rounded-xl border-t mx-auto px-2 py-3 md:w-1/4 my-3 w-full"
             >
               <div className="image flex justify-center">
                 <img src={product.image} className=" w-44" alt="" />
