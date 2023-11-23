@@ -18,7 +18,7 @@ const ProductsScreen = () => {
   }
   return (
     <div className="  border-t border-slate-50 ">
-      <h2 className=" mx-auto bg-slate-800 font-bold text-2xl p-4 my-5 flex items-center text-slate-100">
+      <h2 className=" mx-auto bg-slate-800 font-bold text-2xl p-6 my-5 flex items-center text-slate-100">
         Recent Products <FaShoppingCart />
       </h2>
       {isLoading ? (
@@ -30,7 +30,7 @@ const ProductsScreen = () => {
           {data.products.map((product) => (
               <Link key={product._id}
               to={`/product/${product._id}`}
-              className="one shadow-xl bg-white rounded-xl border-t px-2 py-3 md:w-1/4 my-3 w-full"
+              className="one shadow-xl bg-white rounded-xl border-t mx-auto px-2 py-3 md:w-1/4 my-3 w-4/5"
             >
               <div className="image flex justify-center">
                 <img src={product.image} className=" w-44" alt="" />

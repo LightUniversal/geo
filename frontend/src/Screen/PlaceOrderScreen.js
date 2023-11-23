@@ -48,7 +48,7 @@ const PlaceOrderScreen = () => {
   };
   return (
     <div className=" w-full md:w-3/4 mx-auto mt-6">
-      <CheckOutScreen />
+      {/* <CheckOutScreen /> */}
       <div className="details text-white flex-wrap flex justify-between mx-4 px-4 my-1 mb-12 rounded-lg bg-blue-900 py-5">
         <div className=" flex items-center">
           <FaUserCircle className="text-5xl mx-5 border border-slate-600 rounded-full p-2" />

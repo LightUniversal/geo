@@ -56,7 +56,7 @@ const Header = () => {
             />
           </div>
           <div
-            className="nav-links duration-500 md:static absolute z-10 bg-slate-900 md:min-h-fit min-h-[40vh] left-0 top-[-100%] md:w-auto  w-full flex items-center px-5"
+            className="nav-links duration-500 md:static absolute z-10 bg-slate-900 md:min-h-fit min-h-[50vh] left-0 top-[-100%] md:w-auto  w-full flex items-center px-5"
             ref={navLink}
           >
             <ul className="flex md:flex-row flex-col md:items-center md:gap-[4vw] gap-8">

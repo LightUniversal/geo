@@ -21,7 +21,7 @@ export const Body = () => {
             </button>
            </div>
         </div>
-        <Link to={"/product/21221"} className=" flex images px-10 justify-center relative bg-slate-50 shadow-xl rounded-xl w-1/2 py-4 items-center">
+        <Link to={"/product/21221"} className=" flex images px-10 justify-center relative bg-slate-50 shadow-xl rounded-full w-1/2 py-4 items-center">
             <img src="/images/photo1.png" alt="" className=' md:w-1/2 mb-7 w-44' />
         </Link>
     </div>
