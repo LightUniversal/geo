@@ -23,6 +23,11 @@ app.use(cookieParser());
 app.use("/api/products", productRoutes);
 app.use("/api/users", userRoutes);
 
+
+// make the upload folder accessible/static folder
+const __dirname = path.resolve(); // set the current directory to be __dirname
+app.use("/backend/public", express.static(path.join(__dirname, "backend/public"))); 
+
 if (process.env.NODE_ENV === "production") {
   // set static folder
   app.use(express.static(path.join(__dirname, "/frontend/build")));
