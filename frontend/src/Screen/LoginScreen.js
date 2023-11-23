@@ -43,20 +43,20 @@ const LoginScreen = () => {
     <Form onSubmit={submitHandler} className="login w-4/5 md:w-2/4 mx-auto rounded-2xl text-black my-12 py-5 px-6 ">
       <div className="title font-bold border-b py-4 border-slate-200">
         <h3 className=" flex items-center text-3xl">
-          Login <FaUserCircle className=" text-green-700 mx-1" />
+          Login <FaUserCircle className=" text-slate-700 mx-1" />
         </h3>
       </div>
       <div className="email my-3">
-        <label htmlFor="email" className="flex items-center font-bold">Email <FaEnvelope className=" text-green-700 mx-1" /></label>
+        <label htmlFor="email" className="flex items-center font-bold">Email <FaEnvelope className=" text-slate-700 mx-1" /></label>
         <input type="email" value={email} onChange={(e)=> setEmail(e.target.value)} name="email" id="email" placeholder="Enter your email" className=" text-black font-bold border w-full py-3 px-2 rounded-md " />
       </div>
       <div className="password my-8">
-        <label htmlFor="password" className="flex items-center font-bold">Password <FaLock className=" text-green-700 mx-1" /></label>
+        <label htmlFor="password" className="flex items-center font-bold">Password <FaLock className=" text-slate-700 mx-1" /></label>
         <input type="password" value={password} onChange={(e)=> { setPassword(e.target.value)}} name="password" id="password" placeholder="Enter your password" className=" border w-full py-3 px-2 rounded-md   text-black font-bold" />
       </div>
-      <button type="submit" onClick={submitHandler} className="flex bg-green-800 my-5 py-3 px-3 rounded-full text-white items-center font-bold">Login <FaSignInAlt className=" text-green-600 mx-2  " /> 
+      <button type="submit" onClick={submitHandler} className="flex bg-slate-800 my-5 py-3 px-3 rounded-full text-white items-center font-bold">Login <FaSignInAlt className=" text-slate-200 mx-2  " /> 
       </button>
-      <Link to={"/register"} className=" text-blue-400 py-3 border-t w-full block">Register a new account</Link>
+      <Link to={"/register"} className=" text-blue-400 py-3 font-bold border-t w-full block">Register a new account</Link>
     </Form>
   );
 };

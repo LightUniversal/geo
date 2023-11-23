@@ -49,7 +49,7 @@ const PlaceOrderScreen = () => {
   return (
     <div className=" w-full md:w-3/4 mx-auto mt-6">
       <CheckOutScreen />
-      <div className="details text-white flex-wrap flex justify-between mx-4 px-4 my-1 mb-12 bg-green-900 py-5">
+      <div className="details text-white flex-wrap flex justify-between mx-4 px-4 my-1 mb-12 rounded-lg bg-blue-900 py-5">
         <div className=" flex items-center">
           <FaUserCircle className="text-5xl mx-5 border border-slate-600 rounded-full p-2" />
           <div className="user">
@@ -91,7 +91,7 @@ const PlaceOrderScreen = () => {
         </div>
       </div>
       <div className="details flex flex-wrap my-3">
-        <div className="ordereditems w-3/4 mx-auto md:w-3/6">
+        <div className="ordereditems w-full mx-5 md:w-3/6">
           <h4 className="font-bold text-xl">Ordered Items</h4>
           {cart.cartItems.map((item, index) => (
             <div
@@ -115,7 +115,7 @@ const PlaceOrderScreen = () => {
             </div>
           ))}
         </div>
-        <div className="summary border border-slate-100 w-3/4 mx-auto py-5 relative shadow-lg rounded-lg">
+        <div className="summary border border-slate-100 md:w-3/4 w-full mx-5 md:mx-auto py-5 relative shadow-lg rounded-lg">
           <div className="flex justify-between font-bold border-slate-200 py-2 px-7">
             <h5>Items Price</h5>{" "}
             <h6 className=" text-green-800">&euro; {cart.itemsPrice}</h6>
@@ -132,7 +132,7 @@ const PlaceOrderScreen = () => {
           </div>
           <Link
             to={"/profile"}
-            className="inline-block bg-green-800 text-white px-4 py-5 font-bold rounded-md absolute bottom-2 left-3"
+            className="inline-block mx-7 my-4 bg-green-800 text-white px-4 py-5 font-bold rounded-md "
           >
             Place Order
           </Link>

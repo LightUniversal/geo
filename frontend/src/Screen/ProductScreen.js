@@ -142,7 +142,7 @@ const ProductScreen = () => {
             {accountinfo ? (
               <div className="reviews mt-6">
                 <div className="title">
-                  <h3 className="font-bold text-2xl my-3 px-4 flex justify-between w-2/5">
+                  <h3 className="font-bold text-2xl my-3 px-4 flex justify-between md:w-2/5 w-full">
                     Reviews{" "}
                     <FaCaretUp className=" border rounded-full text-3xl p-0.5" />
                   </h3>
@@ -150,7 +150,7 @@ const ProductScreen = () => {
                 {product.reviews.length === 0 && (
                   <h4 className=" font-bold">No reviews</h4>
                 )}
-                <div className="review  w-2/5 py-2 rounded-lg  mb-3">
+                <div className="review  md:w-2/5 w-full py-2 rounded-lg  mb-3">
                   {product.reviews.map((review) => (
                     <div
                       key={review._id}
@@ -169,7 +169,7 @@ const ProductScreen = () => {
                 </div>
                 <div className="writereview ">
                   <div className="head">
-                    <h4 className=" font-bold text-lg my-1 bg-slate-50 border border-slate-50 py-3 px-5 rounded-lg w-2/5">
+                    <h4 className=" font-bold text-lg my-1 bg-slate-50 border border-slate-50 py-3 px-5 rounded-lg md:w-2/5 w-full">
                       Write review
                     </h4>
                     <p className=" font-semibold my-2 px-5">Rating</p>
@@ -194,7 +194,7 @@ const ProductScreen = () => {
                       placeholder="Write review"
                       value={comment}
                       onChange={(e) => setComment(e.target.value)}
-                      className=" px-5 py-3 font-semibold border md:w-2/5 w-5/6 mt-3 rounded-md"
+                      className=" px-5 py-3 font-semibold border md:w-2/5 w-full mt-3 rounded-md"
                     ></textarea>
                     <button
                       className="submit bg-slate-900 text-white block px-3 py-2 font-bold text-sm rounded-md"

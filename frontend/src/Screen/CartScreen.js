@@ -40,10 +40,10 @@ const CartScreen = () => {
         </strong>
       ) : (
         <div className="cartsection w-full md:w-3/4 mx-auto mt-3 px-3">
-          <h3 className=" flex items-center  font-bold my-2 text-2xl text-center border-b py-3">
+          {/* <h3 className=" flex items-center  font-bold my-2 text-2xl text-center border-b py-3">
             Shopping Details
             <FaInfoCircle className="mx-2 mb-0.5 text-green-600" />
-          </h3>
+          </h3> */}
           <div className="flex flex-wrap justify-around">
             <div className="items py-5 px-3 ">
               {cartItems.map((item) => (
